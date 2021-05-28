@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedex - MCH</title>
+  </head>
+  <body>
+    <main id="mainContainer">
+      <h1>Pokedex</h1>
+      <div id="pokedex">
+        <div class=searchContainer>
+          <input type="text" id="pokemonSearch" onkeypress="enterInput(event)" placeholder="Enter Pokemon name or #" value="">
+          <input type="button" onclick="fetchData()" value="ENTER">
+          <p id="pokemonResult"></p>
+          <p id="pokemonImagebox"><img src="" id="pokemonImage" alt=""></p>
+        </div>
+        <div class="screenContainer">
+          <div class="screen">
+            <div class="topScreenLights">
+              <div class="screenRedLights"></div>
+              <div class="screenRedLights"></div>
+            </div>
+            <div id="mainScreen"></div>
+            <div class="bottomScreenLights">
+              <div class="screenRedLights">
+                <div class="glareRedLights"></div>
+              </div>
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <p></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
