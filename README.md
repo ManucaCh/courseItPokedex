@@ -1,0 +1,2 @@
+# courseItPokedex
+Ejercicio Pokedex CourseIT
