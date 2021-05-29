@@ -12,12 +12,12 @@
       <h1>Pokedex</h1>
       <div id="pokedex">
         <div class=searchContainer>
-          <input type="text" id="pokemonSearch" onkeypress="enterInput(event)" placeholder="Enter Pokemon name or #" value="">
+          <input type="text" id="pokemonSearch" onkeyup="enterInput(event)" placeholder="Enter Pokemon name or #" value="">
           <input type="button" onclick="fetchData()" value="ENTER">
           <p id="pokemonResult"></p>
           <p id="pokemonImagebox"><img src="" id="pokemonImage" alt=""></p>
         </div>
-        <div class="screenContainer">
+        <!-- <div class="screenContainer">
           <div class="screen">
             <div class="topScreenLights">
               <div class="screenRedLights"></div>
@@ -28,7 +28,7 @@
               <div class="screenRedLights">
                 <div class="glareRedLights"></div>
               </div>
-          </div>
+          </div> -->
         </div>
 
         <div></div>
