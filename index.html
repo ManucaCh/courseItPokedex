@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Pokedex - MCH</title>
   </head>
   <body>
@@ -12,17 +17,20 @@
       <div class="pokedexContainer">
         <div class="searchContainer">
           <input
-            type="text"
+            type="number"
             id="searchInput"
             onkeyup="enterInput(event)"
-            placeholder="Enter Pokemon name or #"
+            placeholder="Enter Pokemon #"
             value=""
+            maxlength="3"
+            max="898"
           />
           <input
             type="button"
             id="searchButton"
+            class="button"
             onclick="fetchData()"
-            value="ENTER"
+            value="SEARCH"
           />
         </div>
         <div class="screenContainer">
@@ -33,7 +41,22 @@
           </div>
         </div>
         <div class="resultContainer">
-          <p id="pokemonResult"></p>
+          <div class="result">
+            <div class="mainResult">
+              <ul class="ulTag">
+                <li>Name</li>
+                <li>ID #</li>
+                <li>Type1</li>
+                <li>Type2</li>
+              </ul>
+              <ul class="ulResult">
+                <li id="pokemonResult"></li>
+                <li id="pokemonID"></li>
+                <li id="pokemonType1"></li>
+                <li id="pokemonType2"></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
