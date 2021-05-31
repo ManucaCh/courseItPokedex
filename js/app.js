@@ -18,6 +18,7 @@ async function fetchData() {
       document.getElementById("pokemonType2").innerText = "---";
     }
   } catch (err) {
+    document.getElementById("pokemonImage").src = "img/img1.png";
     alert("Pokemon does not exist");
     console.log(err);
   }
