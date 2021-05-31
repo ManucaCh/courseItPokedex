@@ -1,5 +1,5 @@
 async function fetchData() {
-  const inputValue = document.getElementById("searchInput").value;
+  const inputValue = document.getElementById("searchInput").value.toLowerCase();
   try {
     // console.log(typeof data);
 
